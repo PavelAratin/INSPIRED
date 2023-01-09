@@ -1,0 +1,23 @@
+.hero{
+  background-image: url('./img/hero-img.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 172px 0 87px 0;
+  &__title{
+    font-size: 44px;
+    color: $colorWhite;
+    font-weight: 400;
+    max-width: 590px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+  &__link{
+    color: $colorWhite;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 14px 41px;
+    border: 1px solid $colorWhite;
+    display: inline-block;
+  }
+}
