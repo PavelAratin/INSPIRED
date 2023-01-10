@@ -1,0 +1,133 @@
+@media screen and (max-width: 1023px){
+  .new-products__wrapper{
+    grid-template-columns: repeat(auto-fit, minmax(189px, 1fr));
+  }
+}
+@media screen and (max-width: 826px){
+  .new-products__wrapper{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header{
+    padding-bottom: 36px;
+    &__top{
+      margin-bottom: 0;
+    }
+  }
+  .tel{
+    font-size: 12px;
+  }
+  .logo{
+    img{
+      width: 154px;
+    }
+  }
+  .nav-gender{
+    margin-bottom: 5px;
+    &__link{
+      font-size: 16px;
+    }
+  }
+  .category-list__link{
+    font-size: 12px;
+    padding: 5px 0;
+  }
+  .category-list{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+  .hero{
+    padding: 156px 0 50px 0;
+    &__title{
+      font-size: 30px;
+      margin-bottom: 24px;
+    }
+  }
+  .new-products{
+    &__title{
+      font-size: 24px;
+    }
+    padding: 64px 0 80px 0;
+    &__title-card{
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    &__prices{
+      margin-bottom: 7px;
+    }
+    &__price{
+      font-size: 12px;
+    }
+  }
+  .footer__wrapper{
+    flex-wrap: wrap;
+  }
+  .footer__title{
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .footer-catalog__wrapper{
+    flex-direction: column;
+  }
+  .footer-catalog__list{
+    margin-right: 0 !important;
+    li:not(:first-child){
+      display: none;
+    }
+  }
+  .footer-catalog,
+  .footer-socials{
+    width: 50%;
+  }
+  .footer-contacts{
+    width: 100%;
+    margin-top: 24px;
+  }
+  .footer-contacts__link{
+    font-size: 12px;
+  }
+  .footer-contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+}
+@media screen and (max-width: 500px){
+  .header{
+    padding-bottom: 16px;
+  }
+  .tel{
+    display: none;
+  }
+  .logo{
+    img{
+      width: 124px;
+    }
+  }
+  .nav-gender__link{
+    font-size: 14px;
+  }
+  .category-list__link{
+    font-size: 10px;
+  }
+  .hero{
+    padding: 76px 0 24px 0;
+    &__title{
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  }
+  .new-products{
+    padding: 24px 0 24px 0;
+    &__title{
+      font-size: 18px;
+    }
+    &__wrapper{
+      padding: 16px 0 60px 0;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+  }
+}

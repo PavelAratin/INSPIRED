@@ -1,0 +1,56 @@
+.footer{
+  &__title{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+  }
+}
+.footer-catalog{
+  &__wrapper{
+    display: flex;
+  }
+  &__list:not(:last-child){
+    margin-right: 80px;
+  }
+  &__item:not(:last-child){
+    margin-bottom: 6px;
+  }
+  &__link--gender{
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+.footer-socials{
+  &__description{
+    margin-bottom: 20px;
+  }
+  &__list{
+    display: flex;
+  }
+  &__item:not(:last-child){
+    margin-right: 10px;
+  }
+}
+.footer-contacts{
+  &__item:not(:last-child){
+    margin-bottom: 16px;
+  }
+  &__link{
+    font-size: 18px;
+  }
+}
+.copyright-list{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  &__designer{
+    margin-bottom: 8px;
+  }
+}

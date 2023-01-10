@@ -8,9 +8,17 @@
 }
 @font-face{
   font-family:'Inter';
-  src:url(fonts/latin-bold.woff2) format('woff2'),
-  url(fonts/latin-bold.woff) format('woff');
+  src:url(fonts/Semi-Bold.woff2) format('woff2'),
+  url(fonts/SemiBold.woff) format('woff');
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
+}
+@font-face{
+  font-family:'Inter';
+  src:url(fonts/Bold.woff2) format('woff2'),
+  url(fonts/Bold.woff) format('woff');
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
 }
