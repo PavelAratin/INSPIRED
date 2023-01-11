@@ -1,3 +1,17 @@
+@media screen and (max-width: 1025px){
+  .footer-catalog{
+    width: 300px;
+  }
+  .footer-socials{
+    width: 300px;
+  }
+  .copyright-list{
+    font-size: 12px;
+    li:first-child{
+      width: 600px;
+    }
+  }
+}
 @media screen and (max-width: 1023px){
   .new-products__wrapper{
     grid-template-columns: repeat(auto-fit, minmax(189px, 1fr));
@@ -91,7 +105,13 @@
   }
   .footer-contacts__item:not(:last-child) {
     margin-bottom: 9px;
-}
+  }
+  .copyright-list{
+    font-size: 12px;
+    li:first-child{
+      width: 369px;
+    }
+  }
 }
 @media screen and (max-width: 500px){
   .header{
@@ -132,5 +152,11 @@
 @media screen and (max-width: 400px){
   .category-list{
     justify-content: flex-start;
+  }
+  .copyright-list{
+    font-size: 12px;
+    li:first-child{
+      width: 142px;
+    }
   }
 }

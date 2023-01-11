@@ -7,11 +7,11 @@
   }
   &__wrapper{
     display: flex;
-    justify-content: space-between;
     margin-bottom: 26px;
   }
 }
 .footer-catalog{
+  width: 487px;
   &__wrapper{
     display: flex;
   }
@@ -27,6 +27,7 @@
   }
 }
 .footer-socials{
+  width: 414px;
   &__description{
     margin-bottom: 20px;
   }
@@ -48,8 +49,10 @@
 .copyright-list{
   font-size: 12px;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 24px;
+  li:first-child{
+    width: 904px;
+  }
   &__designer{
     margin-bottom: 8px;
   }
