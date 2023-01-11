@@ -48,12 +48,28 @@
 .category-list{
   display: flex;
   align-items: center;
-  justify-content: center;
-  &__item:not(:last-child){
-    margin-right: 52px;
-  }
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 692px;
+  gap: 10px;
   &__link{
     text-transform: uppercase;
     padding: 24px 0;
+    position: relative;
+    transition: color 0.2s linear;
+    &.active:before{
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 10px;
+      width: 26px;
+      height: 2px;
+      background-color: $colorBlack;
+    }
+    &:hover{
+      color: $colorGreyLight;
+    }
   }
 }
