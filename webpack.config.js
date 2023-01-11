@@ -44,10 +44,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html')
     }),
+    //переносим детальную страницу товара
+    new HtmlWebpackPlugin({
+      filename: 'card.html',
+      template: 'src/card.html'
+    }),
     //плагин для работы с css (указываем как будтет называется файл css)
     new MiniCssExtractPlugin({
       filename: 'index.[contenthash].css'
-    })
+    }),
   ],
   //здусь установим лоадер для автомаической перезагрузки браузра после изменения html
   module: {
