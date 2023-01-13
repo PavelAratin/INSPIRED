@@ -1,5 +1,5 @@
 .header{
-  padding: 24px 0 39px 0;
+  padding: 24px 0 0 0;
   &__top{
     display: flex;
     justify-content: space-between;
@@ -72,4 +72,7 @@
       color: $colorGreyLight;
     }
   }
+}
+.navigation{
+  margin-bottom: 30px;
 }
