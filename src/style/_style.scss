@@ -40,3 +40,24 @@ p{
 .title{
   text-transform: uppercase;
 }
+label{
+  span{
+    display: block;
+    width: fit-content;
+    padding: 4px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid $colorBlack;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &:checked+span{
+      opacity: 1;
+      background-color: red;
+    }
+  }
+}

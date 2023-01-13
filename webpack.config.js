@@ -46,8 +46,13 @@ module.exports = {
     }),
     //переносим детальную страницу товара
     new HtmlWebpackPlugin({
-      filename: 'card.html',
-      template: 'src/card.html'
+      filename: 'card-detail.html',
+      template: 'src/card-detail.html'
+    }),
+    //переносим корзину товаров
+    new HtmlWebpackPlugin({
+      filename: 'cart.html',
+      template: 'src/cart.html'
     }),
     //плагин для работы с css (указываем как будтет называется файл css)
     new MiniCssExtractPlugin({

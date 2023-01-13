@@ -1,0 +1,90 @@
+.detail-card{
+  padding: 20px 0;
+  .container{
+    max-width: 854px;
+  }
+  img{
+    width: 100%;
+  }
+  &__wrapper{
+    display: flex;
+    gap: 20px;
+  }
+  &__button{
+    padding: 14px 41px;
+    background-color: $colorBlack;
+    border: none;
+    color: $colorWhite;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 16px;
+  }
+}
+.detail-card-content{
+  &__title{
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__prices{
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+.colors{
+  margin-bottom: 24px;
+}
+.articuls{
+  margin-bottom: 24px;
+  &__str{
+    font-size: 12px;
+    color: $colorGreyy;
+    font-weight: 400;
+  }
+}
+.detail-mintitle{
+  font-size: 12px;
+  color: $colorGreyy;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.size{
+  margin-bottom: 24px;
+  &__list{
+    display: flex;
+  }
+  &__item:not(:last-child){
+    margin-right: 4px;
+  }
+}
+.detail-description{
+  margin-bottom: 40px;
+  &__description{
+    font-size: 16px;
+    max-width: 280px;
+    line-height: 140%;
+  }
+}
+.actions{
+  display: flex;
+}
+.counter{
+  padding: 13px 16px;
+  border: 1px solid $colorBlack;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  &__minus{
+    cursor: pointer;
+  }
+  &__plus{
+    cursor: pointer;
+  }
+  span{
+    padding: 5px;
+    font-size: 16px;
+  }
+}
