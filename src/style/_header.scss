@@ -31,22 +31,22 @@
   &__item{
     width: 50%;
     padding: 16px;
-    position: relative;
-    &.active:before{
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background-color: $colorBlack;
-      display: block;
-      left: 0;
-      bottom: -1px;
-    }
   }
   &__link{
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
+    position: relative;
+    &.active:before{
+      content: '';
+      position: absolute;
+      width: calc(100% + 32px);
+      height: 1px;
+      background-color: $colorBlack;
+      display: block;
+      left: -16px;
+      bottom: -17px;
+    }
   }
 }
 .category-list{
