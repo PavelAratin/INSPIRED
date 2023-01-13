@@ -18,6 +18,10 @@
   &__item:not(:last-child){
     margin-right: 24px;
   }
+  button{
+    border: none;
+    background-color: transparent;
+  }
 }
 .nav-gender{
   border-bottom: 1px solid $colorGreyLight;

@@ -1,7 +1,9 @@
 import { renderNavigation } from "../render/renderNavigation";
 import { renderHero } from "../render/renderHero";
 import { renderProducts } from "../render/renderProducts";
-export const mainPage =()=>{
+//вывод отдельных частей верстки на страницу
+export const mainPage =(gender)=>{
+  console.log(gender);
   renderNavigation();
   renderHero();
   renderProducts();
