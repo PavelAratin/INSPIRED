@@ -1,9 +1,14 @@
 .hero{
-  background-image: url('./img/hero-img.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 172px 0 87px 0;
+  &__women{
+    background-image: url('./img/hero-women-img.jpg');
+  }
+  &__men{
+    background-image: url('./img/hero-men-img.jpg');
+  }
   &__title{
     font-size: 44px;
     color: $colorWhite;
