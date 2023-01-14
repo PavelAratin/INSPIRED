@@ -43,7 +43,6 @@ export const renderNavigation = (gender) => {
               elem.classList.add('active')
             }
           });
-          // document.querySelector('active')?.classList.remove('active')
         }
       })
   )
