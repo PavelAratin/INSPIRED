@@ -8,12 +8,13 @@ export const renderFooter = () => {
   const footerCatalogWrapper = document.querySelector('.footer-catalog__wrapper');
   footerCatalogWrapper.innerHTML = ''
   for (let i = 0; i < arrayData.length; i++) {
+    console.log(arrayData[i][1].title);
     const footerCatalogList = createElement('ul', {
       className: 'footer-catalog__list'
     })
     const footerCatalogLinkTitle = createElement('a', {
       className: `footer-catalog__link footer-catalog__link--gender`,
-      textContent: arrayData[i][0],
+      textContent: arrayData[i][1].title,
       href: `#`
     }, {
       parent: createElement('li', {
