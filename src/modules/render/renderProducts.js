@@ -1,3 +1,4 @@
+import womenImg from '../../img/woomen-new-1.jpg';
 export const renderProducts =()=>{
   const products = document.querySelector('.new-products')
   products.innerHTML = `
@@ -6,7 +7,7 @@ export const renderProducts =()=>{
         <div class="new-products__wrapper">
           <div class="new-products__card">
             <div class="new-products__imgbox">
-              <img src="./img/woomen-new-1.jpg" alt="Женское белье">
+              <img src=${womenImg} alt="Женское белье">
             </div>
             <div class="new-products__body">
               <h3 class="new-products__title-card">Бюстгальтер-Балконет Wien из Микрофибры</h3>
@@ -39,7 +40,7 @@ export const renderProducts =()=>{
           </div>
           <div class="new-products__card">
             <div class="new-products__imgbox">
-              <img src="./img/woomen-new-1.jpg" alt="Женское белье">
+              <img src=${womenImg} alt="Женское белье">
             </div>
             <div class="new-products__body">
               <h3 class="new-products__title-card">Бюстгальтер-Балконет Wien из Микрофибры</h3>
@@ -72,7 +73,7 @@ export const renderProducts =()=>{
           </div>
           <div class="new-products__card">
             <div class="new-products__imgbox">
-              <img src="./img/woomen-new-1.jpg" alt="Женское белье">
+              <img src=${womenImg} alt="Женское белье">
             </div>
             <div class="new-products__body">
               <h3 class="new-products__title-card">Бюстгальтер-Балконет Wien из Микрофибры</h3>
@@ -105,7 +106,7 @@ export const renderProducts =()=>{
           </div>
           <div class="new-products__card">
             <div class="new-products__imgbox">
-              <img src="./img/woomen-new-1.jpg" alt="Женское белье">
+              <img src=${womenImg} alt="Женское белье">
             </div>
             <div class="new-products__body">
               <h3 class="new-products__title-card">Бюстгальтер-Балконет Wien из Микрофибры</h3>
@@ -138,7 +139,7 @@ export const renderProducts =()=>{
           </div>
           <div class="new-products__card">
             <div class="new-products__imgbox">
-              <img src="./img/woomen-new-1.jpg" alt="Женское белье">
+              <img src=${womenImg} alt="Женское белье">
             </div>
             <div class="new-products__body">
               <h3 class="new-products__title-card">Бюстгальтер-Балконет Wien из Микрофибры</h3>
@@ -171,7 +172,7 @@ export const renderProducts =()=>{
           </div>
           <div class="new-products__card">
             <div class="new-products__imgbox">
-              <img src="./img/woomen-new-1.jpg" alt="Женское белье">
+              <img src=${womenImg} alt="Женское белье">
             </div>
             <div class="new-products__body">
               <h3 class="new-products__title-card">Бюстгальтер-Балконет Wien из Микрофибры</h3>
@@ -204,7 +205,7 @@ export const renderProducts =()=>{
           </div>
           <div class="new-products__card">
             <div class="new-products__imgbox">
-              <img src="./img/woomen-new-1.jpg" alt="Женское белье">
+              <img src=${womenImg} alt="Женское белье">
             </div>
             <div class="new-products__body">
               <h3 class="new-products__title-card">Бюстгальтер-Балконет Wien из Микрофибры</h3>
@@ -237,7 +238,7 @@ export const renderProducts =()=>{
           </div>
           <div class="new-products__card">
             <div class="new-products__imgbox">
-              <img src="./img/woomen-new-1.jpg" alt="Женское белье">
+              <img src=${womenImg} alt="Женское белье">
             </div>
             <div class="new-products__body">
               <h3 class="new-products__title-card">Бюстгальтер-Балконет Wien из Микрофибры</h3>
