@@ -1,20 +1,18 @@
-import FB from '../../img/facebook.svg';
-import VK from '../../img/vk.svg';
-import { dataNavigation } from '../dataNavigation';
+
 import { createElement } from '../createElement';
-const arrayData = Object.entries(dataNavigation);
+import { DATA } from '../const';
+// const arrayData = Object.entries(dataNavigation);
 export const renderFooter = () => {
 
   const footerCatalogWrapper = document.querySelector('.footer-catalog__wrapper');
   footerCatalogWrapper.innerHTML = ''
-  for (let i = 0; i < arrayData.length; i++) {
-    console.log(arrayData[i][1].title);
+  for (let i = 0; i < DATA.navigation.length; i++) {
     const footerCatalogList = createElement('ul', {
       className: 'footer-catalog__list'
     })
     const footerCatalogLinkTitle = createElement('a', {
       className: `footer-catalog__link footer-catalog__link--gender`,
-      textContent: arrayData[i][1].title,
+      textContent: DATA.navigation[i][1].title,
       href: `#`
     }, {
       parent: createElement('li', {
@@ -23,7 +21,7 @@ export const renderFooter = () => {
         parent: footerCatalogList
       })
     })
-    const footerCatalogLink = arrayData[i][1].list.map((item) =>
+    const footerCatalogLink = DATA.navigation[i][1].list.map((item) =>
       createElement('a', {
         className: 'footer-catalog__link',
         textContent: item.title,
