@@ -46,12 +46,17 @@ const headerTop = createElement('div', {
   className: 'header__top',
   innerHTML: `
   <a class="tel" href="tel:+79304902620">8 930 490 26 20</a>
-  <a class="logo" href="card-detail.html">
-    <img src="${logo}" alt="Логотип сайта нижнего белья INSPIRED">
-  </a>
   `,
 }, {
   parent: container
+})
+
+const logoLink = createElement('a', {
+  className: 'logo',
+  href: '/#',
+  innerHTML: `<img src="${logo}" alt="Логотип сайта нижнего белья INSPIRED">`
+}, {
+  parent: headerTop
 })
 
 createElement('ul', {
