@@ -1,18 +1,24 @@
 
 import { createElement } from '../createElement';
 import { DATA } from '../const';
-// const arrayData = Object.entries(dataNavigation);
+// const arrayData = Object.entries(DATA);
 export const renderFooter = () => {
+  // const arrayData = Object.entries(DATA)
+  console.log(DATA.navigation.data);
 
   const footerCatalogWrapper = document.querySelector('.footer-catalog__wrapper');
   footerCatalogWrapper.innerHTML = ''
-  for (let i = 0; i < DATA.navigation.length; i++) {
+  const arrayData = Object.entries(DATA)
+  const currentArray = (Object.entries(arrayData[0][1].data));
+  
+
+  for (let i = 0; i < currentArray.length; i++) { 
     const footerCatalogList = createElement('ul', {
       className: 'footer-catalog__list'
     })
     const footerCatalogLinkTitle = createElement('a', {
       className: `footer-catalog__link footer-catalog__link--gender`,
-      textContent: DATA.navigation[i][1].title,
+      textContent: currentArray[i][1].title,
       href: `#`
     }, {
       parent: createElement('li', {
@@ -21,7 +27,8 @@ export const renderFooter = () => {
         parent: footerCatalogList
       })
     })
-    const footerCatalogLink = DATA.navigation[i][1].list.map((item) =>
+    console.log(currentArray[i][1].list); 
+    const footerCatalogLink = currentArray[i][1].list.map((item) =>
       createElement('a', {
         className: 'footer-catalog__link',
         textContent: item.title,

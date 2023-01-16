@@ -1,7 +1,5 @@
 import { DATA } from "../const";
 import { createElement } from "../createElement";
-console.log(DATA);
-
 
 export const renderNavigation = (gender) => {
   const navigationContainer = document.querySelector('.navigation .container')
@@ -19,7 +17,7 @@ export const renderNavigation = (gender) => {
       parent: navigationContainer
     })
   //формируем список элементов по категориям
-  const categoryListItem = DATA.navigation[gender].list.map((item) =>
+  const categoryListItem = DATA.navigation.data[gender].list.map((item) =>
     createElement('a',
       {
         className: 'category-list__link',
@@ -55,11 +53,11 @@ export const renderNavigation = (gender) => {
     parent: navigations,
   })
 
-  for (const genderName in DATA.navigation) {
+  for (const genderName in DATA.navigation.data) {
     createElement('a', {
       className: `nav-gender__link ${gender === genderName ? 'active' : ''}`,
       href: `#/${genderName}`,
-      textContent: DATA.navigation[genderName].title
+      textContent: DATA.navigation.data[genderName].title
     },
       {
         parent: createElement('li', {
