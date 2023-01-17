@@ -42,6 +42,10 @@ const init = async () => {
       //вывод навигации,херо,товаров на главную страницу
       menMainPage();
     })
+    //через библиотеку , данные из строки поиска
+    router.on('search', (data) => {
+      console.log(data.params.value);
+    })
     
   } catch (error) {
     createElement('h2',{
