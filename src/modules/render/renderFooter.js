@@ -1,10 +1,7 @@
 
 import { createElement } from '../createElement';
 import { DATA } from '../const';
-// const arrayData = Object.entries(DATA);
 export const renderFooter = () => {
-  // const arrayData = Object.entries(DATA)
-  console.log(DATA.navigation.data);
 
   const footerCatalogWrapper = document.querySelector('.footer-catalog__wrapper');
   footerCatalogWrapper.innerHTML = ''
@@ -27,7 +24,6 @@ export const renderFooter = () => {
         parent: footerCatalogList
       })
     })
-    console.log(currentArray[i][1].list); 
     const footerCatalogLink = currentArray[i][1].list.map((item) =>
       createElement('a', {
         className: 'footer-catalog__link',

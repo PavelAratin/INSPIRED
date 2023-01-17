@@ -12,11 +12,14 @@ import { renderHeader } from "./modules/render/renderHeader";
 import { getData } from "./modules/getData";
 import { API_URL } from "./modules/const";
 import { DATA } from "./modules/const";
+import { createCssColors } from "./modules/creareCssColors";
 
 //обращение к серверу
 const init = async () => {
   DATA.navigation = await getData(`${API_URL}/api/categories`);
-  console.log(DATA.navigation.data);
+  DATA.colors = await getData(`${API_URL}/api/colors`);
+  //функция для создания динамического css на основе данных с сервера
+  createCssColors(DATA.colors)
   //через библиотеку
   router.on('*', () => {
     renderHeader();

@@ -22,7 +22,7 @@ export const renderNavigation = (gender) => {
       {
         className: 'category-list__link',
         textContent: item.title,
-        href: `#/${gender} / ${item.slug}`
+        href: `#/${gender}/${item.slug}`
       },
       {
         parent: createElement('li', {
@@ -31,7 +31,7 @@ export const renderNavigation = (gender) => {
           {
             parent: categoryList
           }),
-          //присваиваем/убираем активнй клас у пунка меню категорий
+        //присваиваем/убираем активнй клас у пунка меню категорий
         cb(elem) {
           elem.addEventListener('click', () => {
             document.querySelectorAll('.category-list__link').forEach(function (item) {
