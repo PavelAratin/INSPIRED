@@ -63,7 +63,6 @@ export const renderProducts = async (title, params) => {
     }, {
       parent: newProducsBody,
       appends: product.colors.map((colorID, i) => {
-        console.log(i === true);
         const color = DATA.colors.data.find(item => item.id == colorID)
         return createElement('li', {
           className: 'colors-list__item'

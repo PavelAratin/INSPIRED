@@ -9,14 +9,14 @@ export const renderFooter = () => {
   const currentArray = (Object.entries(arrayData[0][1].data));
   
 
-  for (let i = 0; i < currentArray.length; i++) { 
+  for (let i = 0; i < currentArray.length; i++) {
     const footerCatalogList = createElement('ul', {
       className: 'footer-catalog__list'
     })
     const footerCatalogLinkTitle = createElement('a', {
       className: `footer-catalog__link footer-catalog__link--gender`,
       textContent: currentArray[i][1].title,
-      href: `#`
+      href: `#/${currentArray[i][0]}`
     }, {
       parent: createElement('li', {
         className: 'footer-catalog__item'
