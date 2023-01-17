@@ -1,7 +1,7 @@
 
 import { createElement } from '../createElement';
 import { DATA } from '../const';
-export const renderFooter = () => {
+export const renderFooter = (gender) => {
 
   const footerCatalogWrapper = document.querySelector('.footer-catalog__wrapper');
   footerCatalogWrapper.innerHTML = ''
@@ -28,7 +28,7 @@ export const renderFooter = () => {
       createElement('a', {
         className: 'footer-catalog__link',
         textContent: item.title,
-        href: `#`
+        href: `#/${currentArray[i][0]}/${item.slug}`
       }, {
         parent: createElement('li', {
           className: 'footer-catalog__item'
