@@ -1,8 +1,23 @@
 import { DATA } from "../const";
 import { createElement } from "../createElement";
 
-export const renderNavigation = (gender) => {
-  const navigationContainer = document.querySelector('.navigation .container')
+//флаг , который будет предотвращать повторный рендеринг навигации
+let flag = false;
+let oldGender = '';
+
+export const renderNavigation = (gender, category) => {
+  const navigationContainer = document.querySelector('.navigation .container');
+
+  if (!gender) {
+    navigationContainer.style.display = 'none';
+  } else {
+    navigationContainer.style.display = '';
+  }
+  if (flag && oldGender === gender) {
+    return;
+  };
+  flag = true;
+
   navigationContainer.textContent = '';
   const navigations = createElement('nav', {
     className: 'nav-gender'
@@ -20,7 +35,7 @@ export const renderNavigation = (gender) => {
   const categoryListItem = DATA.navigation.data[gender].list.map((item) =>
     createElement('a',
       {
-        className: 'category-list__link',
+        className: `category-list__link ${category === item.slug ? 'active' : ''}`,
         textContent: item.title,
         href: `#/${gender}/${item.slug}`
       },
