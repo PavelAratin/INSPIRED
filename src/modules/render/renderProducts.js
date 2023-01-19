@@ -1,7 +1,7 @@
 
 import { getData } from '../getData';
 import { API_URL } from '../const';
-import { createElement } from '../createElement';
+import { createElement } from '../utils/createElement';
 import { DATA } from '../const';
 import { renderPagination } from './renderPgination';
 import { COUNT_PAGINATION } from '../const';

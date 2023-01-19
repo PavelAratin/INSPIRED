@@ -1,4 +1,4 @@
-import { createElement } from "./createElement"
+import { createElement } from "./utils/createElement";
 //формируем динмаический css для списка цветов из базы данных
 export const createCssColors = (colors) => {
   let style = createElement('style');

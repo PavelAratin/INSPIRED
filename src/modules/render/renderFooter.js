@@ -1,5 +1,5 @@
 
-import { createElement } from '../createElement';
+import { createElement } from '../utils/createElement';
 import { DATA } from '../const';
 export const renderFooter = (gender) => {
 

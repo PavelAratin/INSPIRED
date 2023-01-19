@@ -1,9 +1,9 @@
 import { DATA } from "../const";
-import { createElement } from "../createElement";
+import { createElement } from "../utils/createElement";
 
 //флаг , который будет предотвращать повторный рендеринг навигации
 let flag = false;
-let oldGender = '';
+let oldGender = 'women';
 
 export const renderNavigation = (gender, category) => {
   const navigationContainer = document.querySelector('.navigation .container');
@@ -16,6 +16,12 @@ export const renderNavigation = (gender, category) => {
   if (flag && oldGender === gender) {
     return;
   };
+
+  if (gender === 'all') {
+    gender = oldGender;
+  }
+
+  oldGender = gender;
   flag = true;
 
   navigationContainer.textContent = '';
