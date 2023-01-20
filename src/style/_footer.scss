@@ -6,8 +6,10 @@
     margin-bottom: 24px;
   }
   &__wrapper{
+    border-top: 1px solid $colorGreyLight;
     display: flex;
     margin-bottom: 26px;
+    padding-top: 30px;
   }
 }
 .footer-catalog{
