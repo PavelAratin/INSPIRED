@@ -14,6 +14,8 @@ import { createCssColors } from "./modules/createCssColors";
 import { createElement } from "./modules//utils/createElement";
 import { categoryPageController } from "./modules/controllers/categoryPageController";
 import { searchPageController } from "./modules/controllers/searchController";
+import { section } from "./modules/const";
+import { favoriteController } from "./modules/controllers/favoriteController";
 
 //обращение к серверу
 const init = async () => {
@@ -46,12 +48,14 @@ const init = async () => {
     router.on('search', searchPageController)
     //через библиотеку , данные из строки поиска
     router.on('/:gender/:category', categoryPageController)
+    //через библиотеку , данные из строки поиска
+    router.on('favorite', favoriteController)
 
   } catch (error) {
     createElement('h2', {
       textContent: 'Что-то пошло не так, попробуйте позже '
     }, {
-      parent: document.querySelector('section'),
+      parent: section,
       cb(h2) {
         h2.style.textAlign = 'center'
       }

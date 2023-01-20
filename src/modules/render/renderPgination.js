@@ -1,6 +1,5 @@
 import { createElement } from "../utils/createElement";
 import { getUrl } from "../utils/getUrl";
-import { router } from "../utils/router";
 
 export const renderPagination = (wrapperPagination, page, pages, count) => {
   wrapperPagination.innerHTML = '';
@@ -47,7 +46,7 @@ export const renderPagination = (wrapperPagination, page, pages, count) => {
     })
     createElement('a', {
       className: `pagination__arrow pagination__arrow--end ${isEnd ? 'pagination__arrow--disabled' : ''}`,
-      href: getUrl({ page: pages }),
+      href: getUrl({page:pages}),
       innerHTML: `<svg width="5" height="8" viewBox="0 0 5 8" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 7.06L3.09042 4L0 0.94L0.951417 0L5 4L0.951417 8L0 7.06Z"/>
       </svg>`,

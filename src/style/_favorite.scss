@@ -1,0 +1,16 @@
+.favorite{
+  &__svg{
+    fill: transparent;
+    stroke: black;
+    pointer-events:none;
+  }
+  &__svg:hover{
+    fill: red;
+  }
+  &__button.favorite__active{
+    svg{
+      fill: red;
+      stroke: red;
+    }
+  }
+}
