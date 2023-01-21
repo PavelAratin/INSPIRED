@@ -14,11 +14,10 @@ export const searchPageController = (routerData) => {
   const params = {
     search: routerData.params.value
   }
-  if(routerData.params?.page){
+  if (routerData.params?.page) {
     params.page = routerData.params.page
   }
   renderNavigation('all');
   renderHero(false);
   renderProducts(routerData.params.value, params);
-
 }

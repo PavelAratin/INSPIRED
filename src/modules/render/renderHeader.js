@@ -14,9 +14,20 @@ export const searchButton = createElement('button', {
     stroke-linejoin="round" />
   </svg>
   `,
-},{
-  cb(btn){
-    btn.addEventListener('click',searchToggle)
+}, {
+  cb(btn) {
+    btn.addEventListener('click', function () {
+      searchToggle()
+      const searchInput = document.querySelector('.form__input')
+      const searchButton = document.querySelector('.form__button')
+      searchInput.addEventListener('input', function (e) {
+        if (this.value.length > 0) {
+          searchButton.removeAttribute('disabled')
+        } else {
+          searchButton.setAttribute('disabled', true)
+        }
+      })
+    })
   }
 })
 export const cartLink = createElement('a', {

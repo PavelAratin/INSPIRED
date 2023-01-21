@@ -9,6 +9,10 @@ export const searchToggle = () => {
   search.classList.toggle('search-show')
 }
 
+const input = () => {
+  console.log('input');
+}
+
 const container = createElement('div', {
   className: 'container'
 }, {
@@ -34,7 +38,8 @@ createElement('input', {
 createElement('button', {
   className: 'form__button',
   type: 'submit',
-  textContent: 'Найти'
+  textContent: 'Найти',
+  disabled: true
 }, {
   parent: form
 })

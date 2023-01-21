@@ -47,5 +47,8 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+    &:disabled{
+      opacity: 0.7;
+    }
   }
 }
