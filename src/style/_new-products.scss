@@ -11,7 +11,7 @@
     padding-top: 40px;
     border-top: 1px solid $colorGreyLight;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 270px));
     row-gap: 40px;
     column-gap: 10px;
   }
