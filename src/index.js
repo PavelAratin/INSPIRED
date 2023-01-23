@@ -16,6 +16,7 @@ import { categoryPageController } from "./modules/controllers/categoryPageContro
 import { searchPageController } from "./modules/controllers/searchController";
 import { section } from "./modules/const";
 import { favoriteController } from "./modules/controllers/favoriteController";
+import { cardController } from "./modules/controllers/cardController";
 
 //обращение к серверу
 const init = async () => {
@@ -48,6 +49,8 @@ const init = async () => {
     router.on('search', searchPageController)
     //через библиотеку , данные из строки поиска
     router.on('/:gender/:category', categoryPageController)
+    // через библиотеку , данные из строки поиска
+     router.on('/product/:id', cardController)
     //через библиотеку , данные из строки поиска
     router.on('favorite', favoriteController)
 

@@ -7,6 +7,7 @@ export const hero = document.querySelector('.hero');
 export const section = document.querySelector('section')
 export const products = document.querySelector('.new-products');
 export const footerCatalogWrapper = document.querySelector('.footer-catalog__wrapper');
+export const cardDetail = document.querySelector('.detail-card');
 export const TITLE = {
   women: {
     title: 'Новая коллекция Бюстгалтер-балконет',

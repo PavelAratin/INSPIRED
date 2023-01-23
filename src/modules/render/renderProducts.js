@@ -91,9 +91,17 @@ export const renderProducts = async (title, params) => {
         return createElement('li', {
           className: 'colors-list__item'
         }, {
-          append: createElement('button', {
-            className: `colors-list__button colors-list__button--${color.title} ${i ? '' : 'active'}`
+          append:createElement('label',{
+            className:'colors-list__label',
+            innerHTML:'<input class="colors-list__input" type=radio></input>'
+          },{
+            append:createElement('span',{
+              className:`colors-list__span colors-list__button--${color.title}`,
+            })
           })
+          // append: createElement('button', {
+          //   className: `colors-list__button colors-list__button--${color.title} ${i ? '' : 'active'}`
+          // })
         })
       })
     })
